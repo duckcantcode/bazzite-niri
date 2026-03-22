@@ -9,8 +9,8 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# remove kde plasma
-dnf5 -y remove plasma-workspace plasma-* kde-*
+# add dms copr
+dnf5 copr enable avengemedia/dms
 
 # setup niri
 dnf5 -y install					\
@@ -23,7 +23,7 @@ dnf5 -y install					\
 	nautilus					\
 	mako						\
 	fuzzel						\
-	waybar						\
+	dms 						\
 	swayidle					\
 	swaylock					\
 	polkit-kde					\
