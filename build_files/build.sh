@@ -16,21 +16,17 @@ dnf5 config-manager addrepo --from-repofile=https://copr.fedorainfracloud.org/co
 dnf5 -y install					\
 	niri						\
 	alacritty					\
-	gdm							\
+	kitty						\
 	xdg-desktop-portal-gtk		\
 	xdg-desktop-portal-gnome	\
 	gnome-keyring				\
-	nautilus					\
-	mako						\
 	fuzzel						\
 	dms 						\
 	swayidle					\
 	swaylock					\
 	polkit-kde					\
-	xwayland-satellite			\
-	swaybg
+	xwayland-satellite			
 
 systemctl enable podman.socket
-systemctl --global add-wants niri.service mako.service
 systemctl --global add-wants niri.service swayidle.service
 systemctl --global add-wants niri.service plasma-polkit-agent.service
