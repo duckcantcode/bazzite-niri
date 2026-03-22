@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # add dms copr
-dnf5 config-manager addrepo --from-repofile=https://copr.fedorainfracloud.org/coprs/avengemedia/dms/repo/fedora-43/avengemedia-dms-fedora-44.repo
+dnf5 config-manager addrepo --from-repofile=https://copr.fedorainfracloud.org/coprs/avengemedia/dms/repo/fedora-44/avengemedia-dms-fedora-44.repo
 
 # setup niri
 dnf5 -y install					\
