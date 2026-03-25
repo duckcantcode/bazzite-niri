@@ -9,11 +9,6 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# add terra repo
-sed 's/enabled=0/enabled=1/g' /etc/yum.repos.d/terra.repo
-dnf5 --refresh upgrade
-#dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-
 # setup niri
 dnf5 -y install					\
 	niri						\
@@ -23,7 +18,7 @@ dnf5 -y install					\
 	xdg-desktop-portal-gnome	\
 	gnome-keyring				\
 	fuzzel						\
-	noctalia-shell				\
+	https://repos.fyralabs.com/terra43/noctalia-shell-0%3A4.7.1-1.fc43.x86_64.rpm				\
 	swayidle					\
 	swaylock					\
 	polkit-kde					\
