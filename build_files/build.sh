@@ -11,6 +11,7 @@ set -ouex pipefail
 
 # add terra repo
 sed 's/enabled=0/enabled=1/g' /etc/yum.repos.d/terra.repo
+dnf5 --refresh upgrade
 #dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 # setup niri
