@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # add terra repo
-sed 's/enabled=0/enabled=1/g' /usr/etc/yum.repos.d/terra.repo
+sed 's/enabled=0/enabled=1/g' /etc/yum.repos.d/terra.repo
 #dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 # setup niri
