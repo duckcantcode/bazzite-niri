@@ -9,8 +9,8 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# add dms copr
-dnf5 config-manager addrepo --from-repofile=https://copr.fedorainfracloud.org/coprs/avengemedia/dms/repo/fedora-44/avengemedia-dms-fedora-44.repo
+# add terra repo
+dnf5 install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 
 # setup niri
 dnf5 -y install					\
@@ -21,7 +21,7 @@ dnf5 -y install					\
 	xdg-desktop-portal-gnome	\
 	gnome-keyring				\
 	fuzzel						\
-	dms 						\
+	noctalia-shell				\
 	swayidle					\
 	swaylock					\
 	polkit-kde					\
