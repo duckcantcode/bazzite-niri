@@ -9,6 +9,8 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+dnf5 -y install https://repos.fyralabs.com/terra43/noctalia-qs-0%3A0.0.10-1.fc43.x86_64.rpm
+
 # setup niri
 dnf5 -y install					\
 	niri						\
