@@ -9,7 +9,7 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-dnf5 -y install https://repos.fyralabs.com/terra43/noctalia-qs-0%3A0.0.12-3.fc43.x86_64.rpm
+dnf5 -y install https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/fedora-44-x86_64/10925164-noctalia-git/noctalia-git-5.0.0%5E421.7263c30-1.fc44.x86_64.rpm
 
 # setup niri
 dnf5 -y install					\
@@ -20,7 +20,6 @@ dnf5 -y install					\
 	xdg-desktop-portal-gnome	\
 	gnome-keyring				\
 	fuzzel						\
-	https://repos.fyralabs.com/terra43/noctalia-shell-0%3A4.7.6-1.fc43.x86_64.rpm				\
 	swayidle					\
 	swaylock					\
 	polkit-kde					\
