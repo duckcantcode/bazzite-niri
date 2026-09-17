@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 #dnf5 -y install https://download.copr.fedorainfracloud.org/results/lionheartp/Hyprland/fedora-44-x86_64/10925164-noctalia-git/noctalia-git-5.0.0%5E421.7263c30-1.fc44.x86_64.rpm
-dnf5 -y install https://github.com/LizardByte/Sunshine/releases/download/v2026.906.222525/Sunshine-2026.906.222525-1.fc44.x86_64.rpm
+dnf5 -y install https://github.com/LizardByte/Sunshine/releases/download/v2026.916.165635/Sunshine-2026.916.165635-1.fc44.x86_64.rpm
 
 # setup niri
 dnf5 -y install					\
